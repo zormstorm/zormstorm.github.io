@@ -1,3 +1,15 @@
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: #2c3e50;
+	position: fixed;
+	z-index: 1;
+}
+
+#body {
+	clear: both;
+}
+
 h1 {
 	color: #2c3e50;
 	text-align: center;
@@ -8,10 +20,4 @@ p {
 	color: #2c3e50;
 	text-align: center;
 	font-family: Times;
-}
-
-#header {
-	width: 100%;
-	height: 50px;
-	background-color: #2c3e50;
 }
