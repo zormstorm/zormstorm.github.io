@@ -1,13 +1,13 @@
 #header {
-	width: 101%;
+	width: 110%;
 	height: 50px;
 	background-color: #2c3e50;
 	position: fixed;
 	z-index: 1;
-	margin: -25px 0px 50px -5px;
+	margin: -25px 0px 50px -10px;
 }
 
-#body {
+#stuff {
 	clear: both;
 	position: relative;
 	margin-top: 20px;
