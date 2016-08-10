@@ -197,6 +197,8 @@ Media Queries
   	background-color: #EEE;
   }
 
+
+
 	/*************************
 	SECTION 1
 	*************************/
@@ -247,6 +249,7 @@ Media Queries
 	  max-width:60%;
 	}
 
+
 }
 
 @media only screen and (min-width: 768px),
@@ -270,8 +273,19 @@ Media Queries
     float: left;
     width: 57%;
   }
-  
+
+  .main aside {
+  	float: right;
+  	width: 35%;
+  } 
+
+   #picture {
+    width: 10em;
+    height: 10em;
+  }
+
 }
+
 
 @media only screen and (min-width: 1140px) {
 
@@ -292,7 +306,12 @@ Media Queries
   .section2 img {
   	max-height: 250px;
   }
-  
+
+  #picture {
+    width: 14em;
+    height: 14em;
+  }
+
 }
 
 /*************************
