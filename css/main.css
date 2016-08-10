@@ -60,6 +60,14 @@ body {
   text-decoration: none;
 }
 
+.title:hover {
+	color: #2c3e50;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -125,65 +133,44 @@ nav a:hover {
 }
 
 
-/*************************
-Section
-*************************/
-
-.section {
-  width: 100%;
-  background: #EEE;
-  height: 30em;
-  padding: 3% 15% 0 15%;
-  margin-bottom: .5em;
-}
-
-.section img {
-  float: right;
-  max-width:30%;
-  max-height:30%;
-  margin-top: 1em;
-}
-
-.section_text {
-  float: left;
-  max-width:60%;
-}
-
-/*************************
-Section 2
-*************************/
-
-.section2 {
-  width: 100%;
-  background: #FFF;
-  height: 30em;
-  padding: 3% 15% 0 15%;
-  box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.10), 3px 3px 3px 3px rgba(0,0,0,0.10);
-  z-index: -2;
-  margin-bottom: 2em;
-}
-
-.section2 img {
-  float: left;
-  max-width:30%;
-  max-height:30%;
-  margin-top: 1em;
-}
-
-.section_text2 {
-  float: right;
-  max-width:60%;
-}
-
-.section2 h1, .section2 p {
-  text-align: right;
-}
 
 /*************************
 Media Queries
 *************************/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 499px) {
+
+  .title {
+  	text-align: center;
+  }
+
+  .section2 h1, .section h1 {
+    text-align: center;
+  }
+
+  .section,
+  .section2 {
+  	background-color: #FFF;
+  	padding: 0 2em;
+  	width: 100%;
+  }
+
+  .section img, 
+  .section2 img {
+  	max-width: 100%;
+  }
+
+  .exp {
+  	background-color: #FFF;
+  }
+
+}
+
+@media only screen and (min-width: 500px) {
+
+  .title {
+  	text-align: center;
+  }
 
   nav a {
     float: left;
@@ -191,6 +178,7 @@ Media Queries
     margin: 0 0 0 5%;
     padding: 5px 1%;
     margin-bottom: 0;
+    text-decoration: none;
   }
 
   nav li:first-child a {
@@ -200,6 +188,64 @@ Media Queries
   nav li:last-child a {
     margin-right: 0;
   }
+
+  .section2 h1, .section h1 {
+  	text-align: left;
+  }
+
+  .exp {
+  	background-color: #EEE;
+  }
+
+	/*************************
+	SECTION 1
+	*************************/
+
+	.section {
+	  width: 100%;
+	  background: #EEE;
+	  height: 30em;
+	  padding: 3% 15% 0 15%;
+	  margin-bottom: .5em;
+	}
+
+	.section img {
+	  float: right;
+	  max-width:30%;
+	  max-height:30%;
+	  margin-top: 1em;
+	}
+
+	.section_text {
+	  float: left;
+	  max-width:60%;
+	}
+
+	/*************************
+	SECTION 2
+	*************************/
+
+	.section2 {
+	  width: 100%;
+	  background: #FFF;
+	  height: 30em;
+	  padding: 3% 15% 0 15%;
+	  box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.10), 3px 3px 3px 3px rgba(0,0,0,0.10);
+	  z-index: -2;
+	  margin-bottom: 2em;
+	}
+
+	.section2 img {
+	  float: left;
+	  max-width:30%;
+	  max-height:30%;
+	  margin-top: 1em;
+	}
+
+	.section_text2 {
+	  float: right;
+	  max-width:60%;
+	}
 
 }
 
@@ -224,11 +270,6 @@ Media Queries
     float: left;
     width: 57%;
   }
-
-  .main aside {
-    float: right;
-    width: 38%;
-  }
   
 }
 
@@ -245,6 +286,11 @@ Media Queries
 
   nav a {
     padding: 25px 1%;
+  }
+
+  .section img, 
+  .section2 img {
+  	max-height: 250px;
   }
   
 }
