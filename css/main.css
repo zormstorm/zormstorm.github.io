@@ -64,6 +64,14 @@ body {
 	color: #2c3e50;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  float: left;
+  margin: .7em;
+}
+
 a:-webkit-any-link {
 	text-decoration: none;
 }
@@ -144,6 +152,10 @@ Media Queries
   	text-align: center;
   }
 
+  .logo {
+    margin: 1em -3em 0 1.5em;
+  }
+
   .section2 h1, .section h1 {
     text-align: center;
   }
@@ -171,6 +183,12 @@ Media Queries
   .title {
   	text-align: center;
   }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin: 1.4em -6em .7em 4em ;
+}
 
   nav a {
     float: left;
@@ -260,6 +278,13 @@ Media Queries
     font-size: 1.4em;
   }
 
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin: .8em;
+    float: left;
+}
+
   nav {
     float: right;
     width: 60%;
@@ -297,6 +322,12 @@ Media Queries
   .title {
     font-size: 2em;
   }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin: .7em;
+}
 
   nav a {
     padding: 25px 1%;
