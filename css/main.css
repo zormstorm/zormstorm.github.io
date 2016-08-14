@@ -49,9 +49,15 @@ body {
 **********************/
 
 .header-container {
-  background: #4CB8C4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4CB8C4 , #3CD3AD); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #4CB8C4 , #3CD3AD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+}
+
+.header-container2 {
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff , #928DAB); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff , #928DAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
 }
 
 .title {
@@ -94,12 +100,12 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #2c3e50;
+  color: #EEE;
 }
 
 .main {
   padding: 30px 0;
-  color: #2c3e50;
+  color: #111;
 }
 
 .main article h1 {
@@ -110,7 +116,7 @@ nav a:hover {
   color: #2c3e50;
   padding: 0px 5% 20px;
   text-align: center;
-  border: 5px solid #4CB8C4;
+  border: 5px solid #2980b9;
 }
 
 #picture {
@@ -123,9 +129,8 @@ nav a:hover {
 }
 
 .footer-container {
-
   width: 100%;
-  background: #4CB8C4;
+  background: #2980b9;
 }
 
 .footer-container footer {
