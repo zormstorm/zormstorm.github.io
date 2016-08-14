@@ -52,6 +52,7 @@ body {
   background: #2980b9; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .header-container2 {
@@ -113,24 +114,28 @@ nav a:hover {
 }
 
 .main aside {
-  color: #2c3e50;
+  color: #111;
   padding: 0px 5% 20px;
   text-align: center;
-  border: 5px solid #2980b9;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 #picture {
   background-color: #FFF;
-  border-radius: 100%;
+  border-radius: 0%;
   width: 14em;
   height: 14em;
-  color: red;
   margin: 3em auto 1em auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .footer-container {
   width: 100%;
   background: #2980b9;
+  box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.10), 3px 3px 3px 3px rgba(0,0,0,0.10);
 }
 
 .footer-container footer {
@@ -213,7 +218,7 @@ Media Queries
   }
 
   .exp {
-  	background-color: #EEE;
+  	background-color: #FAFAFA;
   }
 
 
@@ -224,7 +229,7 @@ Media Queries
 
 	.section {
 	  width: 100%;
-	  background: #EEE;
+	  background: #FAFAFA;
 	  height: 30em;
 	  padding: 3% 15% 0 15%;
 	  margin-bottom: .5em;
