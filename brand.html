@@ -24,10 +24,17 @@ body, html {
 
 /* Windrush Page */
 .bgimg-4 {
+    background-image: url("/images/windrushbg.png");
     min-height: 400px;
-    background: #34bcae; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #34bcae , #354c6d); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #34bcae , #354c6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* Brand Page */
+.bgimg-5 {
+    min-height: 400px;
+    background: #C04848; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #C04848 , #480048); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C04848 , #480048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -40,11 +47,42 @@ body, html {
     filter: grayscale(90%);
 }
 
+.quotebox {
+  width: 50%;
+}
+
+.quote {
+  font-size: 1.5em;
+  background-color: #eee;
+  padding: 1em;
+}
+
+.quoter {
+  max-width: 250px;
+  border: 2px solid #eee;
+  padding: 1em;
+}
+
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+
+    .quote {
+        font-size: 1.5em;
+        text-align: center;
+        background-color: red;
+    }
+
+    .quotebox {
+      width: 100%;
+    }
+
+    .quoter {
+      margin: 0 auto;
+    }
+
 }
 </style>
 
@@ -73,52 +111,29 @@ body, html {
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">WINDRUSH</span>
+<div class="bgimg-5 w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <img style="height: 150px; width: 150px;" class="logo" src="/images/logo_w2.png">
   </div>
 </div>
 
+
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">SALES MANAGER</h3>
-  <p class="w3-center"><em>October 2015 - Present</em></p>
-  <p>My primary role as the Sales Manager is designing, monitoring, and administrating the sales pipeline for Windrush. Other duties include: marketing, customer support, video production, graphic design, branding, product management, and administrating the company's investment pipeline. My favorite thing about my job is creating engaging content with our application. I created content using Windrush to tell better stories with data, see <a href="http://windrush.windrush.org/tzorm/Super+Bowl+50/">Super Bowl Article</a> and <a href="http://windrush.windrush.org/tzorm/2015+World+Series/">World Series Article</a>. I also used our app to make <a href="http://windrush.windrush.org/tzorm/Marketing/">updating reports</a> on how content was doing as well as overall analytics about our marketing site.</p>
+  <h3 class="w3-center">BRAND</h3>
+  <p class="w3-center"><em>Thinking about myself and trying to create a brand around that.</em></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis erat eget condimentum accumsan. Quisque sed maximus tellus. Fusce iaculis nibh in est faucibus pretium. Sed non efficitur neque. Suspendisse potenti. Suspendisse dolor libero, consectetur in sagittis vitae, tempor vitae dui. Integer tincidunt quam est, sit amet laoreet lacus scelerisque eu. Nullam augue lorem, vulputate at nisl sit amet, rutrum pharetra elit. Duis finibus scelerisque erat a fermentum. Mauris magna metus, eleifend eu erat ut, sagittis sagittis magna. Maecenas dictum ligula at volutpat venenatis. Morbi eleifend, eros vel hendrerit condimentum, nibh nisl semper lectus, et viverra leo urna eget quam.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
-      <p><b>Startup Tech Valley Pitch</b></p><br>
-      <img src="/images/windrushps.png" style="margin-top: -2em; border-radius:100%;" alt="Windrush Pitch">
+      <p><b>GPOY</b></p><br>
+      <img src="/images/gpoy.jpg" class="w3-circle" style="margin-top: -2em;" alt="Photo of Me">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-section">
-      <p>
-    		While at Windrush I was able to pitch at <strong>Startup Tech Valley</strong> in front of more that 300 investors and potential customers. In June of 2016 I moved to NYC with the company to complete the Barclays Techstars Accelerator for FinTech companies. This program receives thousands of applications and Windrush was one of ten teams accepted. Throught the program I have met mentors and customers that give guidance on strategy and fundraising. One of my favorite projects to work on was our Product Hunt launch. Gaining almost 500 upvotes Windrush was able to make the front page, gain press, and convert inbound traffic into free trials.
-	    </p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center" style="margin-top: -3em; margin-bottom: 1em;">OTHER WORK</h3>
-
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
- <div class="w3-row-padding w3-center" style="padding-bottom: 2em;">
-    <div class="w3-col m3">
-      <a href="http://www.techstars.com/content/accelerators/barclays/announcing-barclays-techstars-nyc-class-2016/" target="_blank"><img src="/images/TS2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://www.producthunt.com/tech/windrush" target="_blank"><img src="/images/PH.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="http://startmart.us/" target="_blank"><img src="/images/SM2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://twitter.com/flashstarts" target="_blank"><img src="/images/FS2.png" style="width:100%" class="w3-hover-opacity"></a>
+        <p><strong>Some "fun" facts about me:</strong> </br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis erat eget condimentum accumsan. Quisque sed maximus tellus. Fusce iaculis nibh in est faucibus pretium. Sed non efficitur neque. Suspendisse potenti. Suspendisse dolor libero, consectetur in sagittis vitae, tempor vitae dui. Integer tincidunt quam est, sit amet laoreet lacus scelerisque eu. Nullam augue lorem, vulputate at nisl sit amet, rutrum pharetra elit. Duis finibus scelerisque erat a fermentum. Mauris magna metus, eleifend eu erat ut, sagittis sagittis magna. Maecenas dictum ligula at volutpat venenatis. Morbi eleifend, eros vel hendrerit condimentum, nibh nisl semper lectus, et viverra leo urna eget quam.
+    </p>
     </div>
   </div>
 </div>
