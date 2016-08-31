@@ -22,21 +22,9 @@ body, html {
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://hd.unsplash.com/photo-1471070235261-d721818d0312');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("https://hd.unsplash.com/photo-1462927114214-6956d2fddd4e");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("https://hd.unsplash.com/photo-1445888985293-8e1b904061c4");
+/* Windrush Page */
+.bgimg-4 {
+    background-image: url("/images/windrushbg.png");
     min-height: 400px;
 }
 
@@ -70,23 +58,22 @@ body, html {
   </ul>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-opacity w3-display-container">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <img style="height: 100px; width: 100px; background-color: #000; margin: 0 0 0 4.3em;" class="logo" src="/images/logo_w2.png">
-    <h1 style="color: #FFF;">Taylor Zorman</h1>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">WINDRUSH</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Coffee. Cleveland. Craft Beer.</em></p>
-  <p>Hi my name is Taylor, a marketer by trade with interests in graphic design and coding. I am currently based in NYC working for Windrush, a data visualization startup, as the Sales Manager. Windrush beat out hundreds of applicants to be one of only ten teams accepted into the NYC Techstars Barclays Accelerator. My professional background has always been focused in the startup space. Previously I was the Program Manager at Flashstarts, a Cleveland based startup accelerator. During my time at Ashland University I majored in Marketing and International Business and minored in Psychology and Spanish.</p>
+  <h3 class="w3-center">SALES MANAGER</h3>
+  <p class="w3-center"><em>October 2015 - Present</em></p>
+  <p>My primary role as the Sales Manager is designing, monitoring, and administrating the sales pipeline for Windrush. Other duties include: marketing, customer support, video production, graphic design, branding, product management, and administrating the company's investment pipeline.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
-      <p><b>GPOY</b></p><br>
-      <img src="/images/gpoy.jpg" class="w3-circle" style="margin-top: -2em;" alt="Photo of Me">
+      <p><b>Startup Tech Valley Pitch</b></p><br>
+      <img src="/images/windrushps.png" style="margin-top: -2em;" alt="Windrush Pitch">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -98,20 +85,7 @@ body, html {
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Click on the images to make them bigger or read more.</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
+ <div class="w3-row-padding w3-center" style="padding-bottom: 2em;">
     <div class="w3-col m3">
       <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=13&ved=0ahUKEwi3stvexurOAhVkDMAKHeryAuQQFghGMAw&url=http%3A%2F%2Fwww.timesunion.com%2Ftuplus-business%2Farticle%2FWooing-young-professionals-groups-hope-6872632.php&usg=AFQjCNEedlN-rGDKrh0QVoHNiAaVrKhRVA&sig2=nwxS30v37HKyORQPSbnbpA&bvm=bv.131286987,d.dmo&cad=rja" target="_blank"><img src="/images/WR.png" style="width:100%" class="w3-hover-opacity"></a>
     </div>
@@ -128,74 +102,8 @@ body, html {
       <a href="https://twitter.com/flashstarts" target="_blank"><img src="/images/FS2.png" style="width:100%" class="w3-hover-opacity"></a>
     </div>
   </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <a href="http://startmart.us/" target="_blank"><img src="/images/SM2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images/MS2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <a href="http://www.ashlandcollegian.com/news/features/article_d66f2e1a-1947-11e2-aab3-0019bb30f31a.html" target="_blank"><img src="/images/AU2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images/C3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">WHERE I WORK</h3>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large"></div>
-    </div>
-    <div class="w3-col m8 w3-container w3-section">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:40px"></i> New York, NY<br>
-        <i class="fa fa-phone w3-hover-text-black" style="width:40px"></i> Phone: 216.509.8603<br>
-        <i class="fa fa-envelope w3-hover-text-black" style="width:40px"> </i> Email: <a href="mailto:taylorzorman@gmail.com">taylorzorman@gmail.com</a><br>
-      </div>
-      </br>
-      <div>
-	      <h3><i>Rise New York</i></h3>
-	      	 <a href="https://thinkrise.com/newyork.html" target="_blank"><img style="max-width: 100%; max-height: 180px;" src="images/rise.png"></a>
-		 </div>
-      <!--  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-        </div>
-      </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND</button> -->
-    </div> 
-  </div>
-</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
