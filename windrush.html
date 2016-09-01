@@ -38,6 +38,15 @@ body, html {
     background: linear-gradient(to left, #0DB14B , #6D91A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+/* Product Hunt Page */
+.bgimg-7 {
+    min-height: 400px;
+    background: #FF512F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF512F , #F09819); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF512F , #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}        
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
@@ -48,10 +57,18 @@ body, html {
     filter: grayscale(90%);
 }
 
+.pgraph {
+  margin-top: -15px;
+}
+
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
+    }
+
+    .pgraph {
+      margin-top: 10px;
     }
 }
 </style>
@@ -110,38 +127,13 @@ body, html {
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-6 w3-display-container">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">TECHSTARS</span>
+     <span class="w3-xxlarge w3-text-light-grey w3-wide"><a name="techstars">TECHSTARS</a></span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<!--<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center" style="margin-top: -3em; margin-bottom: 1em;">OTHER WORK</h3> -->
-
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<!-- <div class="w3-row-padding w3-center" style="padding-bottom: 2em;">
-    <div class="w3-col m3">
-      <a href="http://www.techstars.com/content/accelerators/barclays/announcing-barclays-techstars-nyc-class-2016/" target="_blank"><img src="/images/TS2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://www.producthunt.com/tech/windrush" target="_blank"><img src="/images/PH.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="http://startmart.us/" target="_blank"><img src="/images/SM2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://twitter.com/flashstarts" target="_blank"><img src="/images/FS2.png" style="width:100%" class="w3-hover-opacity"></a>
-    </div>
-  </div>
-</div> -->
-
-
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">Barclays FinTech Accelerator</h3>
+  <h3 class="w3-center"><a name="techstars">Barclays FinTech Accelerator 2016</h3>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -149,15 +141,40 @@ body, html {
       <div id="googleMap" class="w3-round-large"></div>
     </div>
     <div class="w3-col m8 w3-container w3-section">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:40px"></i> New York, NY<br>
-      </div>
-      <p>The Barclays Accelerator, powered by Techstars, helps start-ups take their businesses to the next level and transform the world. The 13-week program provides companies with a wide range of resources. They have an extensive group of mentors hand-picked from some of the world's leading talent, including influential Barclays executives and the powerful Techstars global network. And it all happens right in the heart of NYC. A startup getting into this program is the equivalent of getting into an Ivy league school.</p>
-    </div> 
+      <!-- <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:40px; "></i> New York, NY<br>
+      </div> -->
+      <p class="pgraph">The <a href="http://www.techstars.com/content/accelerators/barclays/announcing-barclays-techstars-nyc-class-2016/">Barclays Accelerator</a>, powered by Techstars, helps start-ups take their businesses to the next level and transform the world. The 13-week program provides companies with a wide range of resources. They have an extensive group of mentors hand-picked from some of the world's leading talent, including influential Barclays executives and the powerful Techstars global network. And it all happens right in the heart of NYC. A startup getting into this program is the equivalent of getting into an Ivy league school.</p>
+      <img src="/images/TS3.png" style="max-width: 100%;">
+    </div>
   </div>
 </div>
 
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-7 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide"><a name="ph">PRODUCT HUNT</a></span>
+  </div>
+</div>
 
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Windrush's Launch - <a href="https://www.producthunt.com/tech/windrush">March 21st, 2016</a></h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/images/PHgif.gif" style="max-width: 100%;">
+    </div>
+    <div class="w3-col m8 w3-container ">
+      <!-- <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:40px; "></i> New York, NY<br>
+      </div> -->
+      <p class="pgraph">For those of you not familiar with Product Hunt it is a daily list of new and cool things, mostly applications and other tech focused products. This post is interactive with a reddit-like thread allowing users to upvote their favorite products to the "front page" of the website. Preparing for this launch required a lot of planning to capture the enormous amount of new traffic generated by be hunted on the site. I helped create marketing materials such as demo videos and landing pages to help convert these new visitors into customers.</p>
+      <p>Windrush received 470 upvotes putting us on the front page. As a result over 3,000 uniques came to our website and we gained cloase to 100 new free trials.</p>
+      <p>View our posting on Product Hunt <a href="https://www.producthunt.com/tech/windrush">here</a>.</p>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
