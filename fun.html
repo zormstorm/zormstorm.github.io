@@ -61,6 +61,12 @@ body, html {
   padding-right: 2em;
 }
 
+.halfdiv {
+  max-width: 50%;
+  float: left;
+  padding: 2em;
+}
+
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -80,6 +86,16 @@ body, html {
     .quoter {
       margin: 0 auto;
     }    
+
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 800px) {
+    .halfdiv {
+      max-width: 80%;
+      display: inline-block;
+      margin: 0 10% 0 10%;
+    }
 
 }
 </style>
@@ -129,9 +145,16 @@ body, html {
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">A mix of weird projects and random things</h3>
-  <p class="w3-center"><em>COMING SOOON</em></p><br>
-  <center>
-  <img src="http://i.imgur.com/csvZXjn.gif" style="max-width:40%; margin: 0 auto;" class="w3-hover-opacity" onclick="onClick(this)"></center>
+  <p class="w3-center"><em>MORE COMING SOON</em></p><br>
+  <div class="halfdiv">
+    <center>
+    <img src="http://i.imgur.com/csvZXjn.gif" style="max-width:80%; margin: 0 auto;" class="w3-hover-opacity" onclick="onClick(this)"></center>
+    <p class="w3-center"><em>I made the above gif of Kate from Techstars. It comes up in our slack channel everytime "deal with it" is said.</em></p>
+  </div>
+  <div class="halfdiv">
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Online Geniuses team call <a href="https://twitter.com/hashtag/Planning?src=hash">#Planning</a> <a href="https://twitter.com/DavidMarkovich_">@DavidMarkovich_</a>  <a href="https://twitter.com/David_Feinman">@David_Feinman</a> <a href="https://twitter.com/taylorzorman">@taylorzorman</a> <a href="https://twitter.com/AdamGSteele">@adamgsteele</a> <a href="https://t.co/mM5CUUubi3">pic.twitter.com/mM5CUUubi3</a></p>&mdash; Online Geniuses (@OnlineGeniuses) <a href="https://twitter.com/OnlineGeniuses/status/755850400905900032">July 20, 2016</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 </div>
 
 
