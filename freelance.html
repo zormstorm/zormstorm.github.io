@@ -45,7 +45,15 @@ body, html {
     background: #FF512F; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FF512F , #DD2476); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FF512F , #DD2476); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}        
+} 
+
+/* Final CTA */
+.bgimg-14 {
+    min-height: 100px;
+    background: #43cea2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}       
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -74,11 +82,35 @@ body, html {
 .halfdiv {
   max-width: 50%;
   float: left;
-  padding: 2em;
+  padding: 1em;
+}
+
+.halfdiv2 {
+  max-width: 100%;
+  float: left;
+  margin-left: -2.7em;
 }
 
 .tznav a:hover {
   background-color: white !important;
+}
+
+.dot {
+  border-radius: 100%; 
+  background-color: #DDD; 
+  width: .7em; 
+  height: .7em; 
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.edot {
+  border-radius: 100%; 
+  border: solid 1px #DDD; 
+  width: .7em; 
+  height: .7em; 
+  display: inline-block;
+  margin-right: .5em;
 }
 
 /* MEDIA SIZES */
@@ -103,6 +135,10 @@ body, html {
       max-width: 100%;
       display: inline-block;
     }
+
+    .halfdivlast {
+      margin-top: -2em;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -111,6 +147,11 @@ body, html {
       float: left;
       display: inline-block;
       margin: 0 5% 0 5%;
+    }
+
+    .halfdiv2 {
+      margin: 0 10% 0 10%;
+      width: 80%;
     }
 }
 </style>
@@ -135,7 +176,7 @@ body, html {
     <li><a style="background-color: #FFF" href="http://taylorzorman.com" class="w3-padding-large">HOME</a></li>
     <li><a style="background-color: #FFF" href="http://taylorzorman.com/#work" class="w3-padding-large w3-hide-small">WORK</a></li>
     <li><a style="background-color: #FFF" href="/brand" class="w3-padding-large w3-hide-small">BRAND</a></li>
-    <li><a style="background-color: #FFF" href="http://taylorzorman.com/#contact" class="w3-padding-large w3-hide-small">CONTACT</a></li>
+    <li><a style="background-color: #FFF" href="/freelance" class="w3-padding-large w3-hide-small">FREELANCE</a></li>
     <li class="w3-hide-small w3-right tznav">
       <a href="mailto:taylorzorman@gmail.com" target="_blank"><i class="fa fa-envelope w3-hover-text-black" style="width:45px; margin-top: .63em;"> </i></a>
     </li>
@@ -155,22 +196,55 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">SALES MANAGER</h3>
-  <p class="w3-center"><em>October 2015 - Present</em></p>
-  <p>My primary role as the Sales Manager is designing, monitoring, and administrating the sales pipeline for Windrush. Other duties include: marketing, customer support, video production, graphic design, branding, product management, and administrating the company's investment pipeline. My favorite thing about my job is creating engaging content with our application. I created content using Windrush to tell better stories with data, see <a href="http://windrush.windrush.org/tzorm/Super+Bowl+50/" target="_blank">Super Bowl Article</a> and <a href="http://windrush.windrush.org/tzorm/2015+World+Series/" target="_blank">World Series Article</a>. I also used our app to make updating reports on how content was doing as well as overall analytics about our marketing site.</p>
+  <h3 class="w3-center">CAPABILITIES</h3>
+  <p class="w3-center"><em>Always looking to learn new skills.</em></p>
   <div class="w3-row">
     <div class="halfdiv">
-      <p><b>Startup Tech Valley Pitch</b></p><br>
-      <img src="/images/windrushps.png" style="margin-top: -2em; border-radius:100%;" alt="Windrush Pitch">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="halfdiv">
-      <p>
-    		While at Windrush I was able to pitch at <strong>Startup Tech Valley</strong> in front of more that 300 investors and potential customers. In June of 2016 I moved to NYC with the company to complete the Barclays Techstars Accelerator for FinTech companies. This program receives thousands of applications and Windrush was one of ten teams accepted. Throughout the program I have met mentors and customers that give guidance on strategy and fundraising. One of my favorite projects to work on was our Product Hunt launch. Gaining almost 500 upvotes Windrush was able to make the front page, gain press, and convert inbound traffic into free trials.
-	    </p>
+      <p>My past experience is mostly in the startup world. Quick, iterative, &quot;Lean Startup&quot; type approaches have led me to learning a vast amount in a short time period. Through internships and my professional career, I have been able to learn and implement strategies in marketing and other disciplines. Please use this page as a general representation of my skill set.</p>
+      <p><strong>Strategy</strong></p>
+      <ul>
+        <li>Marketing</li>
+        <li>Customer Personas</li>
+        <li>Drip Campaigns</li>
+        <li>Event Planning/Marketing</li>
+        <li>Social Media</li>
+        <li>Community Building</li>
+      </ul>
+    </div> 
+    <div class="halfdiv halfdivlast">
+      <p>One of my favorite past times is learning new software and trying out the latest task manager. In my second internship I learned how to use Illustrator to design t-shirts and have been in love with the product ever since. Working with more digital companies I started learning *Sketch. I am proficient in most CRMs and CMS, love Google Apps, and am constantly learning more.</p>
+      <p><strong>Software. Skills. Tools.</strong></p>
+      <div class="halfdiv2">
+        <ul style="list-style: none; margin-top: 0px;">
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            &nbsp;&nbsp;ScreenFlow
+          </li> 
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="edot"></div>
+            &nbsp;&nbsp;Illustrator
+          </li>
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="edot"></div>
+            &nbsp;&nbsp;WordPress
+          </li>
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="edot"></div><div class="edot"></div><div class="edot"></div>
+            &nbsp;&nbsp;HTML/CSS
+          </li>
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="edot"></div><div class="edot"></div><div class="edot"></div>
+            &nbsp;&nbsp;Photoshop
+          </li>
+          <li>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="edot"></div><div class="edot"></div><div class="edot"></div><div class="edot"></div>
+            &nbsp;&nbsp;Sketch*
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <p class="w3-center"><em>Also, I created this website from a <a href="http://www.w3schools.com/w3css/tryw3css_templates_parallax.htm">W3 template</a> and customized most of it. But seriously, why pay to reinvent the wheel?</a></em></p>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
@@ -236,6 +310,13 @@ body, html {
   <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-14 w3-display-container">
+  <div class="w3-display-middle">
+    <center><a href="mailto:taylorzorman@gmail.com?subject=Freelance Work - General" target="_blank"><button class="w3-btn  w3-large">Contact Me</button></a></center>
   </div>
 </div>
 
