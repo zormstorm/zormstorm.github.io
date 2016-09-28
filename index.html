@@ -66,7 +66,9 @@ body, html {
 /* Final CTA */
 .bgimg-14 {
     min-height: 100px;
-    background: #f4f4f4;
+    background: #C04848; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #C04848 , #480048); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C04848 , #480048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }  
 
 .w3-wide {letter-spacing: 10px;}
@@ -206,7 +208,7 @@ body, html {
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-14 w3-display-container" style="margin-top: -3em;">
   <div class="w3-display-middle">
-    <center><a href="/freelance"><button class="w3-btn  w3-large" style="border-color: #000; color: #000;">FREELANCE</button></a></center>
+    <center><a href="/freelance"><button class="w3-btn tzbtn w3-large" style="border-color: #FFF; color: #FFF;">FREELANCE</button></a></center>
   </div>
 </div>
 
