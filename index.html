@@ -14,32 +14,54 @@ body, html {
     line-height: 1.8;
 }
 
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(to left,
+      rgba(192, 72, 72, 0.5), 
+      rgba(72, 0, 72, 0.5)
+    ),
+    /* bottom, image */
+    url(../../images/bg1.jpg);
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(to left,
+      rgba(192, 72, 72, 0.5), 
+      rgba(72, 0, 72, 0.5)
+    ),
+    /* bottom, image */
+    url(../../images/bg2.png);
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(to left,
+      rgba(192, 72, 72, 0.5), 
+      rgba(72, 0, 72, 0.5)
+    ),
+    /* bottom, image */
+    url(../../images/bg3.png);
+  min-height: 400px;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    opacity: 0.7;
+    opacity: 0.99;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('../../images/bg1.png');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url('../../images/bg2.png');
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url('../../images/bg3.png');
-    min-height: 400px;
-}
 
 /* Final CTA */
 .bgimg-14 {
@@ -103,8 +125,9 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-opacity w3-display-container">
   <div class="w3-display-middle" style="white-space:nowrap; padding: 2em;">
-    <img style="height: 125px; width: 125px; margin: 0 0 0 4em; background-color: #000;" class="logo" src="/images/logo_w2.png">
-    <h1 style="color: #FFF;">Taylor Zorman</h1>
+    <img style="height: 125px; width: 125px; margin: 0 0 0 5.6em;" class="logo w3-center" src="/images/logo_w2.png">
+    <h1 class="w3-center" style="color: #FFF;">Taylor Zorman</h1>
+    <h3 class="w3-center" style="color: #FFF; font-size: 1.2em;"><em>Marketing & Digital Problem Solver</em></h3>
   </div>
 </div>
 
@@ -115,7 +138,7 @@ body, html {
   <p>Hi my name is Taylor, a <strong>marketer</strong> by trade with interests in <strong>graphic design</strong> and <strong>coding</strong>. I was previously based in NYC working for Windrush, a data visualization startup, as the Sales Manager. Windrush beat out hundreds of applicants to be one of only ten teams accepted into the NYC Techstars Barclays Accelerator. My professional background has always been focused in the startup space. Prior to Windrush, I was the Program Manager at Flashstarts, a Cleveland based startup accelerator. During my time at Ashland University I majored in Marketing and International Business with minors in Psychology and Spanish.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
-      <p><b>GPOY</b></p><br>
+      <p><b>E S T P</b></p><br>
       <img src="/images/gpoy.jpg" class="w3-circle" style="margin-top: -2em;" alt="Photo of Me">
     </div>
 
