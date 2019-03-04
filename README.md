@@ -1,3 +1,3 @@
  # zormstorm.github.io
 
-This is my personal website yo
+This is my personal website
